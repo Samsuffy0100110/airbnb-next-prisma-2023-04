@@ -1,6 +1,7 @@
-import { Nunito } from 'next/font/google';
+import NavigationBar from "./components/commons/navigation/NavigationBar";
+import { Nunito } from "next/font/google";
 
-import './globals.scss';
+import "./globals.scss";
 
 export const metadata = {
   title: 'AirBnb',
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   )
 }
