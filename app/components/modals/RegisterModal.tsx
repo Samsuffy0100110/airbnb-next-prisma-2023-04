@@ -2,7 +2,7 @@
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import { useCallback, useState } from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-hot-toast";
 import Input from "../inputs/Input";
@@ -95,8 +95,8 @@ const RegisterModal = () => {
             />
             <Button
                 outline
-                label="Inscription avec Github"
-                icon={AiFillGithub}
+                label="Inscription avec Facebook"
+                icon={FaFacebook}
                 onClick={() => {}}
             />
             <div
