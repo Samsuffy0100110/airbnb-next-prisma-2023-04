@@ -1,3 +1,5 @@
+'use client';
+
 import Container from "../../Container";
 import UserMenu from "./UserMenu";
 import Search from "./Search";

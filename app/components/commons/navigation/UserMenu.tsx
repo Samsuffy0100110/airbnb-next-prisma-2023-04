@@ -1,11 +1,13 @@
 'use client';
 
+import userRegisterModal from "@/app/hooks/useRegisterModal";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
 import Avatar from "../../Avatar";
 
 const UserMenu = () => {
+    const registerModal = userRegisterModal();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleOpen = useCallback(() => {
@@ -75,11 +77,11 @@ const UserMenu = () => {
                         <>
                             <MenuItem
                                 onClick={() => {}}
-                                label="Login"
+                                label="Connexion"
                             />
                             <MenuItem
-                                onClick={() => {}}
-                                label="Sign Up"
+                                onClick={registerModal.onOpen}
+                                label="Inscription"
                             />
                         </>
                     </div>
